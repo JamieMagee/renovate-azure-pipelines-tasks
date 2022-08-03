@@ -1,0 +1,14 @@
+jobs:
+  - job: JobOne
+    steps:
+      - task: Bash@3
+        inputs:
+          script: 'echo Hello World'
+
+      - task: AzureFileCopy@1
+
+  - job: JobTwo
+    steps:
+      - task: AzureCLI@1
+
+      - task: AzureCLI@2

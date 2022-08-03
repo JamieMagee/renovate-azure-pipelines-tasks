@@ -1,0 +1,29 @@
+stages:
+  - stage: StageOne
+    jobs:
+      - job: JobOne
+        steps:
+          - task: Bash@3
+            inputs:
+              script: 'echo Hello World'
+
+          - task: AzureFileCopy@1
+
+      - job: JobTwo
+        steps:
+          - task: AzureCLI@1
+
+          - task: AzureCLI@2
+  - stage: StageTwo
+    jobs:
+      - job: JobOne
+        steps:
+          - task: AzureWebApp@1
+
+          - task: CacheBeta@0
+
+      - job: JobTwo
+        steps:
+          - task: DownloadPipelineArtifact@0
+
+          - task: DownloadPipelineArtifact@1
