@@ -9,6 +9,6 @@ jobs:
 
   - job: JobTwo
     steps:
-      - task: AzureCLI@1
+      - task: AzureCLI@2.198.0
 
-      - task: AzureCLI@2
+      - task: AzureCLI@2.198.0
