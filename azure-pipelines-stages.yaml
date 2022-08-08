@@ -18,7 +18,7 @@ stages:
     jobs:
       - job: JobOne
         steps:
-          - task: AzureWebApp@1
+          - task: AzureWebApp@1.208.0
 
           - task: CacheBeta@0
 
