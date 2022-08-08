@@ -20,7 +20,7 @@ stages:
         steps:
           - task: AzureWebApp@1
 
-          - task: CacheBeta@0
+          - task: CacheBeta@0.198.0
 
       - job: JobTwo
         steps:
