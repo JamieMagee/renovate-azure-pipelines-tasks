@@ -24,6 +24,6 @@ stages:
 
       - job: JobTwo
         steps:
-          - task: DownloadPipelineArtifact@0
+          - task: DownloadPipelineArtifact@2.198.0
 
-          - task: DownloadPipelineArtifact@1
+          - task: DownloadPipelineArtifact@2.198.0
