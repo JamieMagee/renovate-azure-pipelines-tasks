@@ -1,5 +1,5 @@
 steps:
-  - task: Bash@3
+  - task: Bash@3.201.1
     inputs:
       script: 'echo Hello World'
 
