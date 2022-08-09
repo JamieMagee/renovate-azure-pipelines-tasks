@@ -11,7 +11,7 @@ stages:
 
       - job: JobTwo
         steps:
-          - task: AzureCLI@1
+          - task: AzureCLI@1.198.0
 
           - task: AzureCLI@2
   - stage: StageTwo
