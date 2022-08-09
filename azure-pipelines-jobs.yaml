@@ -5,7 +5,7 @@ jobs:
         inputs:
           script: 'echo Hello World'
 
-      - task: AzureFileCopy@1
+      - task: AzureFileCopy@1.202.0
 
   - job: JobTwo
     steps:
